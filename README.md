@@ -26,7 +26,7 @@ Name : Martin Rinkov F109249
 1. Clone the repo:
    ```bash
    git clone https://github.com/MartinNBU/Docker-Mininet-Floodlight-Final-Task-F109249.git
-   cd <your-repo-directory>
+   cd Docker-Mininet-Floodlight-Final-Task-F109249
 
 docker-compose up
 
