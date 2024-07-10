@@ -34,6 +34,8 @@ python/python3 configure_flows.py
 
 mininet> pingall
 
+https://youtu.be/ZgdPXyvzwbs - Quick reminder about the video, its only an example of how a docker-mininet-floodlight setup( in tree topology , 4 swiches , 9 hosts) is suppose to work, because I had many problems with setting up floodlight on my device and running the python scrips. Pulled the floodlight via docker (Had problems with setting up floodlight normally beacuse of thrift/netty incompatibility (checked the build.xml file aslo) then ran into pyhton problems where I can't run my own scripts even with sudo mn --custom command. 
+
 
 
 
