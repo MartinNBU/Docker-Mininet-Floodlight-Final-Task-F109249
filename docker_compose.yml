@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  floodlight:
+    image: floodlight/floodlight
+    ports:
+      - "6653:6653"
+      - "8080:8080"
+    networks:
+      - mynetwork
+
+  mininet:
+    image: gns3/mininet
+    volumes:
+      - ./linear_topo.py:/linear_topo.py
+    entrypoint: sh -c "python /linear_topo.py"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
